@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- style -->
+     <style>
+        .poppins{
+            font-family: "Poppins", sans-serif;
+        }
+        .bg{
+            background-color: #F4F7FF;
+        }
+     </style>
+
+</head>
+<body class="poppins md:container md:mx-auto bg">
+
+    <header class="pt-2">
+        <nav class="bg-[#FFFFFF] rounded-2xl flex justify-between items-center text-center mx-10 my-4 p-5 shadow-lg">
+            <div class="flex p-2 gap-2 flex-row">
+                <img src="./assets/logo.png" alt="Logo">
+                <div class="text-[35px]">
+                    <span class="font-light">Dev</span><span class="font-bold">Board</span>
+                </div>
+            </div>
+            <div>
+                <button id="desk-btn" class="px-3 py-2 bg-[#3752FD] text-white rounded-lg">Back To Desk</button>
+            </div>
+         </nav>
+
+         <main>
+            <h1 class="text-center font-bold text-4xl m-6">BLOGS</h1>
+            <section class="bg-[#FFFFFF] rounded-2xl flex justify-between items-center text-center flex-col mx-10 my-4 p-5">
+                <div class="bg-[#FFFFFF] rounded-2xl text-start mx-10 my-4 p-5 shadow-lg">
+                    <p class="m-1 p-2 font-bold text-[24px]">Question 1: What are the different ways to select an element in the DOM?</p>
+                    <hr class="border-dashed border-b-1 ">
+                    <p class="m-1 p-2 font-medium text-[18px]">Elements can be selected using getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), or querySelectorAll().
+
+                    </p>
+                </div>
+                <div class="bg-[#FFFFFF] rounded-2xl text-start mx-10 my-4 p-5 shadow-lg">
+                    <p class="m-1 p-2 font-bold text-[24px]">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+                    <hr class="border-dashed border-b-1 ">
+                    <p class="m-1 p-2 font-medium text-[18px]">We can change the HTML content (including tags) inside an element by using innerHTML and the visible text content inside an element, taking CSS styles into account by using innerText and all the text content inside an element, including hidden elements, without considering CSS styles by using textContent .
+
+                    </p>
+                </div>
+                <div class="bg-[#FFFFFF] rounded-2xl text-start mx-10 my-4 p-5 shadow-lg">
+                    <p class="m-1 p-2 font-bold text-[24px]">Question-3: What is event delegation in the DOM?</p>
+                    <hr class="border-dashed border-b-1 ">
+                    <p class="m-1 p-2 font-medium text-[18px]">Event delegation is when you add one event listener to a parent element instead of each child element. This way, the parent handles events for all its children, even if they are added later.
+
+                    </p>
+                </div>
+                <div class="bg-[#FFFFFF] rounded-2xl text-start mx-10 my-4 p-5 shadow-lg">
+                    <p class="m-1 p-2 font-bold text-[24px]">Question-4: What is event bubbling in the DOM?</p>
+                    <hr class="border-dashed border-b-1 ">
+                    <p class="m-1 p-2 font-medium text-[18px]">Event bubbling is when an event that happens on an element (like a button click) "bubbles up" to its parent elements. So, if a child element triggers an event, it will also trigger the same event on the parent, grandparent, and so on, until it reaches the root of the document.
+                    </p>
+                </div>
+                <div class="bg-[#FFFFFF] rounded-2xl text-start mx-10 my-4 p-5 shadow-lg">
+                    <p class="m-1 p-2 font-bold text-[24px]">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+                    <hr class="border-dashed border-b-1 ">
+                    <p class="m-1 p-2 font-medium text-[18px]">We can create elements with createElement(), add them using appendChild() or insertBefore(), and remove them with removeChild() or remove().
+
+                    </p>
+                </div>
+            </section>
+         </main>
+    </header>
+    <script src="./script/blog.js"></script>
+
+</body>
+</html>

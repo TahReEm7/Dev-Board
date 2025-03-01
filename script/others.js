@@ -3,9 +3,11 @@ function displayDate() {
     const weekdayOptions = { weekday: 'short' };
     const dateOptions = { year: 'numeric', month: 'short', day: 'numeric' };
     const day = today.toLocaleDateString('en-US', weekdayOptions);
-    const date = today.toLocaleDateString('en-US', dateOptions);
+    const date = today.toLocaleDateString('en-US', dateOptions).replace(",", '  ');
     
-    document.getElementById('date').innerText = `${day} 
+  
+
+    document.getElementById('date').innerText = `${day} ,
     ${date}`;
   }
 

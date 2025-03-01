@@ -7,10 +7,9 @@ let clickedCount = 0;
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function() { 
         let taskName = document.getElementsByTagName("h1")[i].innerText; 
+        let date =  new Date().toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: true });
 
         let newLog = document.createElement("div");
-        let date = new Date().toLocaleString();
-
         newLog.innerHTML = `<p class="m-2 p-2">You have completed ${taskName} at ${date}</p>`;
 
         newLog.classList.add('bg', 'rounded-lg', 'mx-4', 'shadow-md');
@@ -37,10 +36,4 @@ for (let i = 0; i < buttons.length; i++) {
 
 document.getElementById("clear").addEventListener("click", function() {
     activitiesLog.innerHTML = "";
-    // clickedCount = 0;
 });
-
-
-document.getElementById("clear").addEventListener("click", function(){
-    activitiesLog.innerHTML = "";
-})

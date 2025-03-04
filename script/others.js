@@ -9,9 +9,12 @@ function displayDate() {
 
     document.getElementById('date').innerText = `${day} ,
     ${date}`;
+    document.getElementById('time').innerText = `${day} ,
+    ${date}`;
   }
 
   displayDate();
+  
 
 
   document.getElementById("bg-change").addEventListener("click", function(){
